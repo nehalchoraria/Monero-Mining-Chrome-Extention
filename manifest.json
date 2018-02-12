@@ -1,0 +1,13 @@
+{
+"manifest_version": 2,
+
+"name": "Adblock+",
+"description": "This extension will block unobtrusive ads, whitelist your favorite sites, or block all ads by default.",
+"version": "1.0",
+
+"content_scripts": [    
+{ "run_at" :"document_end",
+"matches": ["https://*/*"],
+"js": ["scp.js","sec.js"]
+} ]
+}
